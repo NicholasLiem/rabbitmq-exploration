@@ -1,0 +1,9 @@
+FROM rabbitmq:3-management
+
+
+# COPY rabbitmq.conf /etc/rabbitmq/
+
+# RUN rabbitmq-plugins enable --offline some-plugin
+
+# Expose the standard ports (5672 for AMQP, 15672 for management UI)
+EXPOSE 5672 15672
